@@ -13,6 +13,15 @@ def render_page1():
 @app.route("/p2")
 def render_page2():
     return render_template('page2.html')
+
+@app.route("/response")
+def render_response():
+    favorite_color = request.args['color'] #get user's input for color input
+    if favorite_color == "red":
+        response = "Thats my favorite color too!"
+    else:
+        response = "My favorite color is red."
+    return render_template('response.html', responseFromServer=response)
     
 if __name__=="__main__":
     app.run(debug=False)
