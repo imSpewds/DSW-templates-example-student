@@ -2,5 +2,14 @@
 
 {% set active_page = "page2" %}
 
-{% block title %}Page 2{% endblock %}
-{% block content %}<h1>Page 2</h1>{% endblock %}
+{% block title %}Mexican Pesos to USD{% endblock %}
+
+{% block content %}
+<h1>Pesos to USD Converter</h1>
+	<form action='/response3'>
+	Pesos to USD<br>
+	<input type="number" min="1" name="Peso">
+	<br><br>
+	<input type="submit">
+   </form>
+{% endblock %}

@@ -2,5 +2,14 @@
 
 {% set active_page = "page1" %}
 
-{% block title %}Page1{% endblock %}
-{% block content %}<h1>Page 1</h1>{% endblock %}
+{% block title %}Miles to Kilometers{% endblock %}
+
+{% block content %}
+<h1>Kilometers to Miles Converter</h1>
+	<form action='/response2'>
+	Kilometers to Miles<br>
+	<input type="number" min="1" name="Miles">
+	<br><br>
+	<input type="submit">
+   </form>
+{% endblock %}

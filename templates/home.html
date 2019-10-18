@@ -2,12 +2,13 @@
 
 {% set active_page = "home" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}USD to Yuan{% endblock %}
+
 {% block content %}
-<h1>Home Page</h1>
+<h1>USD to Yuan Converter</h1>
   <form action='/response'>
-      What is your favorite color?<br>
-      <input type="text" name="color">
+      USD to Chinese Yuan<br>
+      <input type="number" min="1" name="USD">
       <br><br>
       <input type="submit">
    </form>

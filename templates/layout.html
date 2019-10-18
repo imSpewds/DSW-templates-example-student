@@ -11,26 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="style.css">
-  <title>{% block title %}{% endblock %} - My Webpage</title>
+  <title>{% block title %}{% endblock %} - My Converter</title>
   
   </head>
   <body>
     <!--nav bar-->
-    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
-      <a class="navbar-brand" href="#">My Website</a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="/">My Converter</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li {% if active_page == "home" %}class="active"{% endif %}>
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/">USD to Yuan</a>
           </li>
           <li {% if active_page == "page1" %}class="active"{% endif %}>
-            <a class="nav-link" href="/p1">Page 1</a>
+            <a class="nav-link" href="/p1">Miles to Kilometers</a>
           </li>
           <li {% if active_page == "page2" %}class="active"{% endif %}>
-            <a class="nav-link" href="/p2">Page 2</a>
+            <a class="nav-link" href="/p2">Pesos to USD</a>
           </li>    
         </ul>
       </div>  
